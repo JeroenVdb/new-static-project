@@ -5,16 +5,16 @@
 	"url": "http://www.jeroenvdb.be",
 	"author": "Jeroen Van den Berghe",
 	"devDependencies": {
-		"grunt": "~0.4.2",
-		"grunt-contrib-concat": "~0.3.0",
-		"grunt-sass": "0.6.1",
-		"grunt-jekyll": "~0.3.8",
-		"grunt-contrib-watch": "~0.4.4",
-		"grunt-contrib-uglify": "~0.2.2",
-		"grunt-contrib-jshint": "~0.6.0",
-		"grunt-bg-shell": "~2.0.2",
-		"grunt-imageoptim": "~1.2.6",
-		"grunt-contrib-copy": "~0.4.1",
-		"grunt-bless": "~0.1.1"
+		"grunt": "*",
+		"grunt-contrib-concat": "*",
+		"grunt-sass": "*",
+		"grunt-jekyll": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-contrib-uglify": "*",
+		"grunt-contrib-jshint": "*",
+		"grunt-bg-shell": "*",
+		"grunt-imageoptim": "*",
+		"grunt-contrib-copy": "*",
+		"grunt-bless": "*"
 	}
 }

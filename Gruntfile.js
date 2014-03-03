@@ -82,8 +82,7 @@ module.exports = function(grunt) {
 		jekyll: {
 			serve: {
 				options: {
-					server: true,
-					server_port: 8000,
+					serve: true,
 					auto: true,
 					dest: './_site',
 					src: '.'
@@ -101,7 +100,7 @@ module.exports = function(grunt) {
 		},
 		imageoptim: {
 			// these paths should match directories
-			files: [
+			src: [
 				'./img'
 			],
 			options: {
