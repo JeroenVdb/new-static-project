@@ -1,12 +1,11 @@
 {
-	"name": "New default project",
-	"description": "New default project",
+	"name": "new-static-project",
+	"description": "New static project",
 	"version": "0.1.0",
 	"url": "http://www.jeroenvdb.be",
 	"author": "Jeroen Van den Berghe",
 	"devDependencies": {
 		"grunt": "~0.4.2",
-		"grunt-contrib-clean": "~0.4.1",
 		"grunt-contrib-concat": "~0.3.0",
 		"grunt-sass": "0.6.1",
 		"grunt-jekyll": "~0.3.8",

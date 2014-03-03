@@ -43,12 +43,12 @@ module.exports = function(grunt) {
 			}
 		},
 		sass: {
-            dist: {
-                files: {
-                    '<%= path.cssSrc %>/main.css': 'sass/main.scss'
-                }
-            }
-        },
+			dist: {
+				files: {
+					'<%= path.cssSrc %>/main.css': 'sass/main.scss'
+				}
+			}
+		},
 		// compass: {
 		// 	dev: {
 		// 		options: {
@@ -140,14 +140,14 @@ module.exports = function(grunt) {
 			// 	files: ['<%= path.sass %>/*.scss','<%= path.sass %>/**/*.scss'],
 			// 	tasks: ['compass:dev', 'bless']
 			// },
+			js: {
+				files: ['<%= path.jsSrc %>/main.js', '<%= path.jsSrc %>/3rdparty/*.js', '<%= path.jsSrc %>/*.js'],
+				tasks: ['concat:dist', 'uglify']
+			},
 			sass: {
 				files: ['<%= path.sass %>/*.scss','<%= path.sass %>/**/*.scss'],
-                tasks: ['sass:dist', 'bless']
-            },
-            js: {
-            	files: ['<%= path.jsSrc %>/main.js', '<%= path.jsSrc %>/3rdparty/*.js', '<%= path.jsSrc %>/*.js'],
-				tasks: ['concat:dist', 'uglify']
-            }
+				tasks: ['sass:dist', 'bless']
+			}
 		}
 	});
 
