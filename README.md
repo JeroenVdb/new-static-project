@@ -22,6 +22,6 @@ My default setup for a new static project.
 ## Run
 - Clone this repository
 - cd to the folder
-- Run 'npm install'
-- Run 'grunt'
-- Site is served to localhost:8000
+- Run `npm install`
+- Run `grunt`
+- Site is served to `localhost:8000`
