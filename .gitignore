@@ -1,5 +1,9 @@
+# Grunt and Jekyll
 _site/
 css/
 csssrc/
 js/dist/
 node_modules/
+
+# Sulbime Text
+*.sublime-workspace
