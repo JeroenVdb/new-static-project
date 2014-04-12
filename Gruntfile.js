@@ -42,6 +42,10 @@ module.exports = function(grunt) {
 				dest: '<%= path.jsDist %>/main.min.js'
 			}
 		},
+		
+		/*
+		** Default SASS Config
+		*/
 		sass: {
 			dist: {
 				files: {
@@ -49,36 +53,27 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		// compass: {
-		// 	dev: {
-		// 		options: {
-		// 			httpPath: '/',
-		// 			cssDir: '<%= path.cssSrc %>',
-		// 			sassDir: '<%= path.sass %>',
-		// 			imagesDir: '<%= path.img %>',
-		// 			javascriptsDir: '<%= path.js %>',
-		// 			outputStyle: 'expanded',
-		// 			noLineComments: false,
-		// 			trace: true,
-		// 			debugInfo: false,
-		// 			force: false,
-		// 			boring: true
-		// 		}
-		// 	},
-		// 	build: {
-		// 		options: {
-		// 			httpPath: '/',
-		// 			cssDir: '<%= path.cssSrc %>',
-		// 			sassDir: '<%= path.sass %>',
-		// 			imagesDir: '<%= path.img %>',
-		// 			javascriptsDir: '<%= path.js %>',
-		// 			outputStyle: 'compressed',
-		// 			noLineComments: true,
-		// 			trace: true, // we want a stack trace on this important file
-		// 			force: true
-		// 		}
-		// 	}
-		// },
+
+		/*
+		** SASS + Compass config
+		*/
+		compass: {
+			dev: {
+				options: {
+					httpPath: '/',
+					cssDir: '<%= path.cssSrc %>',
+					sassDir: '<%= path.sass %>',
+					imagesDir: '<%= path.img %>',
+					javascriptsDir: '<%= path.js %>',
+					outputStyle: 'expanded',
+					noLineComments: false,
+					trace: true,
+					debugInfo: false,
+					force: false,
+					boring: true
+				}
+			}
+		},
 		jekyll: {
 			serve: {
 				options: {
