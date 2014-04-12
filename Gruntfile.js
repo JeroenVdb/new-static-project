@@ -2,7 +2,12 @@ module.exports = function(grunt) {
 
 	// Project configuration.
 	grunt.initConfig({
+
 		pkg: grunt.file.readJSON('package.json'),
+
+		/**
+		* Some path variables we can use in this config file
+		*/
 		path: {
 			css: 'css',
 			cssSrc: 'csssrc', // in sass:dist we move the css to cssSrc folder and after bless we move them to the actual css folder
@@ -12,6 +17,10 @@ module.exports = function(grunt) {
 			jsDist: 'js/dist',
 			sass: 'sass'
 		},
+
+		/**
+		* Concatenate all Javascript files
+		*/
 		concat: {
 			options: {
 				compress: false,
@@ -27,6 +36,10 @@ module.exports = function(grunt) {
 				dest: '<%= path.jsDist %>/main.js'
 			}
 		},
+	
+		/**
+		* Uglify: Minify files with UglifyJS
+		*/
 		uglify: {
 			options: {
 				mangle: false,
