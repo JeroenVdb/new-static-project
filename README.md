@@ -9,6 +9,7 @@ My default setup for a new static project.
 - Grunt with configurated plugins:
     - contrib-concat
     - sass
+    - contrib-compass
     - jekyll
     - contrib-watch
     - contrib-uglify
