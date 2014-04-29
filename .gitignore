@@ -4,6 +4,7 @@ css/
 csssrc/
 js/dist/
 node_modules/
+.sass-cache
 
 # Sulbime Text
 *.sublime-workspace

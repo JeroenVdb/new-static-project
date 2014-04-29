@@ -153,7 +153,7 @@ module.exports = function(grunt) {
 			},
 			sass: {
 				files: ['<%= path.sass %>/*.scss','<%= path.sass %>/**/*.scss'],
-				tasks: ['sass:dist', 'bless']
+				tasks: ['compass:dev', 'bless'] // or 'sass:dist'
 			}
 		}
 	});
@@ -170,7 +170,7 @@ module.exports = function(grunt) {
 		'concat:dist',
 		'uglify:build',
 		// sass specific tasks
-		'sass:dist',
+		'compass:dev', // or 'sass:dist'
 		// watch
 		'watch'
 	]);

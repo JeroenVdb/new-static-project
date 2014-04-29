@@ -1,2 +1,29 @@
+/* line 1, ../sass/base/_base.scss */
 body {
-  background-color: red; }
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  /* line 1, ../sass/base/_base.scss */
+  body {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* line 1, ../sass/layout/_layout.scss */
+.container {
+  width: 300px;
+}
+@media screen and (min-width: 768px) {
+  /* line 1, ../sass/layout/_layout.scss */
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 984px) {
+  /* line 1, ../sass/layout/_layout.scss */
+  .container {
+    width: 984px;
+  }
+}
