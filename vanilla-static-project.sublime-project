@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".",
+			"folder_exclude_patterns": [ // same as git ignore
+				".sass-cache",
+				"css",
+				"csssrc",
+				"docs",
+				"js/dist",
+				"_site",
+				"node_modules",
+				"reports"
+			]
+		}
+	]
+}
