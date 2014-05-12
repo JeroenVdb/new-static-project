@@ -2,4 +2,4 @@ name: New static project
 markdown: redcarpet
 pygments: false
 port: 8000
-exclude: ['node_modules', '.sass-cache', 'sass', '.gitignore', 'Gruntfile.js', 'package.json', 'README.md', 'csssrc']
+exclude: ['node_modules', '.sass-cache', 'sass', '.gitignore', 'Gruntfile.js', 'package.json', 'README.md', 'csssrc', '*.sublime-project', '*.sublime-workspace']
