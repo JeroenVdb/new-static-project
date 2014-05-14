@@ -175,4 +175,13 @@ module.exports = function(grunt) {
 		'watch'
 	]);
 
+	grunt.registerTask('test', [
+		'bgShell:jekyll',
+		// js specific tasks
+		'concat:dist',
+		'uglify:build',
+		// sass specific tasks
+		'compass:dev', // or 'sass:dist'
+	]);
+
 };

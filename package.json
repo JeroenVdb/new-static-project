@@ -1,21 +1,24 @@
 {
-  "name": "new-static-project",
-  "description": "New static project",
-  "version": "0.1.0",
-  "url": "http://www.jeroenvdb.be",
-  "author": "Jeroen Van den Berghe",
-  "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-contrib-concat": "*",
-    "grunt-sass": "*",
-    "grunt-contrib-compass": "~0.7.2",
-    "grunt-jekyll": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-jshint": "*",
-    "grunt-bg-shell": "*",
-    "grunt-imageoptim": "*",
-    "grunt-contrib-copy": "*",
-    "grunt-bless": "*"
-  }
+	"name": "new-static-project",
+	"description": "New static project",
+	"version": "0.1.0",
+	"url": "http://www.jeroenvdb.be",
+	"author": "Jeroen Van den Berghe",
+	"devDependencies": {
+		"grunt": "~0.4.4",
+		"grunt-contrib-concat": "*",
+		"grunt-sass": "*",
+		"grunt-contrib-compass": "~0.7.2",
+		"grunt-jekyll": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-contrib-uglify": "*",
+		"grunt-contrib-jshint": "*",
+		"grunt-bg-shell": "*",
+		"grunt-imageoptim": "*",
+		"grunt-contrib-copy": "*",
+		"grunt-bless": "*"
+	},
+	"scripts": {
+		"test": "grunt test"
+	}
 }
