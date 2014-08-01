@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 				dest: '<%= path.jsDist %>/main.js'
 			}
 		},
-	
+
 		/**
 		* Uglify: Minify files with UglifyJS
 		*/
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 				dest: '<%= path.jsDist %>/main.min.js'
 			}
 		},
-		
+
 		/*
 		** Default SASS Config
 		*/
@@ -153,7 +153,7 @@ module.exports = function(grunt) {
 			},
 			sass: {
 				files: ['<%= path.sass %>/*.scss','<%= path.sass %>/**/*.scss'],
-				tasks: ['compass:dev', 'bless'] // or 'sass:dist'
+				tasks: ['sass:dist', 'bless'] // or 'compass:dev'
 			}
 		}
 	});
@@ -170,18 +170,9 @@ module.exports = function(grunt) {
 		'concat:dist',
 		'uglify:build',
 		// sass specific tasks
-		'compass:dev', // or 'sass:dist'
+		'sass:dist', // or 'compass:dev
 		// watch
 		'watch'
-	]);
-
-	grunt.registerTask('test', [
-		'bgShell:jekyll',
-		// js specific tasks
-		'concat:dist',
-		'uglify:build',
-		// sass specific tasks
-		'compass:dev', // or 'sass:dist'
 	]);
 
 };
